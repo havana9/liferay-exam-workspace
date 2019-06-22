@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<beans
+	default-destroy-method="destroy"
+	default-init-method="afterPropertiesSet"
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+>
+	<bean class="com.liferay.exam.usercrud.service.impl.UserCrudLocalServiceImpl" id="com.liferay.exam.usercrud.service.UserCrudLocalService" />
+	<bean class="com.liferay.exam.usercrud.service.impl.UserCrudServiceImpl" id="com.liferay.exam.usercrud.service.UserCrudService" />
+	<bean class="com.liferay.exam.usercrud.service.persistence.impl.UserCrudPersistenceImpl" id="com.liferay.exam.usercrud.service.persistence.UserCrudPersistence" parent="basePersistence" />
+</beans>

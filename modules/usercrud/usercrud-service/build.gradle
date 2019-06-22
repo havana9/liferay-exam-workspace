@@ -1,0 +1,13 @@
+dependencies {
+    compileOnly group: "javax.mail", name: "mail", version: "1.4"
+	compileOnly group: "biz.aQute.bnd", name: "biz.aQute.bndlib"
+	compileOnly group: "com.liferay", name: "com.liferay.portal.spring.extender.api"
+	compileOnly group: "com.liferay.portal", name: "com.liferay.portal.kernel"
+	compileOnly project(":modules:usercrud:usercrud-api")
+}
+
+buildService {
+	apiDir = "../usercrud-api/src/main/java"
+}
+
+group = "com.liferay.exam.usercrud"

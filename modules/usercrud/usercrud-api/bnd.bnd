@@ -1,0 +1,10 @@
+Bundle-Name: usercrud-api
+Bundle-SymbolicName: com.liferay.exam.usercrud.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.liferay.exam.usercrud.exception,\
+	com.liferay.exam.usercrud.model,\
+	com.liferay.exam.usercrud.service,\
+	com.liferay.exam.usercrud.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../usercrud-service/service.xml
