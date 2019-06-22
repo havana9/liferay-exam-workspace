@@ -33,12 +33,10 @@ public class UserCrudActionCommandPortlet extends BaseMVCActionCommand{
 
 	private static Log _log = LogFactoryUtil.getLog(UserCrudActionCommandPortlet.class);
 	
+@Reference
 private UserCrudLocalService _userCrudLocalService;
 	
-	@Reference(unbind = "-")
-	protected void setUserCrudService(UserCrudLocalService userCrudLocalService) {
-		_userCrudLocalService = userCrudLocalService;
-	}
+	
 	
 	@Override
 	protected void doProcessAction(ActionRequest actionRequest, ActionResponse actionResponse) throws Exception {

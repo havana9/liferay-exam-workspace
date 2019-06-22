@@ -26,12 +26,10 @@ property = {
 }, service = MVCRenderCommand.class)
 public class UserCrudRenderCommandPortlet implements MVCRenderCommand {
 
+	@Reference
 	private UserCrudLocalService _userCrudLocalService;
 	
-	@Reference(unbind = "-")
-	protected void setUserCrudService(UserCrudLocalService userCrudLocalService) {
-		_userCrudLocalService = userCrudLocalService;
-	}
+	
 	
 	private static Log _log = LogFactoryUtil.getLog(UserCrudRenderCommandPortlet.class);
 	@Override
